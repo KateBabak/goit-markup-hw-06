@@ -438,9 +438,32 @@
                     </svg>
                 </a>
             </li>
+            <p class="footer-modal-text">
+                Підпишіться на розсилку
+            </p>
+            <form>
+                <input type="email"
+                name="user_name" 
+                class="footer-modal-form" 
+                required 
+                pattern="[a-zA-Zа-яА-Я]+" 
+                minlength="2"
+                placeholder="E-mail"
+                >
+                <button class="footer-modal-button">
+                    Підписатися
+                    <svg class="footer-modal-btn-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#modal-icon"></use>
+                    </svg>
+                </button>
+                
+ 
+            </form>
     </div>
     </div>
 </footer>
+
+ <!-- Modal window -->
 
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
@@ -482,7 +505,7 @@
             title="xxx-xxx-xx-xx"
             />
             <svg class="modal-form-input-icon" width="12" height="12">
-            <use href="./images/sprite.svg#modal-icon-phone"> </use>
+            <use href="./images/sprite.svg#modal-icon-phone"></use>
             </svg>
             </span>
         </label>
@@ -503,8 +526,8 @@
             class="modal-form-message" 
             placeholder="Введіть текст"></textarea>
         </label>
-        <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-chek"/>
-        <label for="user-policy" class="modal-chek-descr">Погоджуюся з розсилкою та приймаю 
+        <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-chek visually-hidden"/>
+        <label for="user-policy" class="modal-chek-descr">Погоджуюся з розсилкою та приймаю&nbsp
            <a href="">Умови договору</a>
         </label>
         <button type="submit" class="modal-form-submit">Відправити</button>

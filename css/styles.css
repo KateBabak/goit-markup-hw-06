@@ -805,9 +805,93 @@ color: var(--color-blue);
     border: 0.2px solid;
     cursor: pointer;
     border-radius: 4px;
+    margin-right: 7px;
+}
+
+.modal-chek-descr {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+    margin-bottom: 30px;
 }
 
 .modal-form-chek:checked + .modal-chek-descr::before {
     background-color: var(--color-blue);
 
 }
+
+/* .modal-form-chek:focus + .modal-chek-descr::before {
+    outline:  0.2px solid var(--primary-text-color-theme-dark); } */
+
+
+        .modal-form-submit {
+            width: 200px;
+            height: 50px;
+            background-color: var(--color-blue);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            font-family: inherit;
+            color: var(--primary-text-color-theme-dark);
+            letter-spacing: 0.06em;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            margin: 0 auto;
+            display: block;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+            .modal-form-submit:hover,
+            .modal-form-submit:focus {
+                    background-color: var(--hover-background-color);
+        
+                }
+
+        /* Footer modal winow */
+
+        .footer-modal-text {
+            font-weight: 700;
+             font-size: 14px;
+            line-height: 16px;
+             letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--primary-text-color-theme-dark);
+        }
+
+        .footer-modal-form {
+            background-color: inherit;
+            color: rgba(255, 255, 255, 0.6);
+            width: 358px;
+            height: 50px;
+        
+        
+        }
+
+        .footer-modal-button {
+                    width: 200px;
+                    height: 50px;
+                    background-color: var(--color-blue);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    font-family: inherit;
+                    color: var(--primary-text-color-theme-dark);
+                    letter-spacing: 0.06em;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 1.87;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.06em;
+                    margin: 0 auto;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+                .footer-modal-button:hover,
+                .footer-modal-button:focus {
+                background-color: var(--hover-background-color);
+                    
+                         }
