@@ -732,7 +732,7 @@ color: var(--color-blue);
     background-color: var(--primary-text-color-theme-dark);
     border-radius: 4px;
     padding-left: 42px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -861,16 +861,34 @@ color: var(--color-blue);
              letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--primary-text-color-theme-dark);
+            margin-bottom: 20px;
         }
 
-        .footer-modal-form {
+        .footer-form {
+        display: flex;
+        gap: 12px;
+            }
+
+        .footer-modal-btn-icon {
+            fill: currentColor;
+            margin-left: 10px;
+        }
+
+        .footer-form-input {
             background-color: inherit;
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--primary-text-color-theme-dark);
             width: 358px;
             height: 50px;
-        
-        
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            padding-left: 16px;
         }
+
+      .footer-form-input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+                }
 
         .footer-modal-button {
                     width: 200px;
