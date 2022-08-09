@@ -438,6 +438,7 @@
                     </svg>
                 </a>
             </li>
+            <div class="footer-modal-form-window footer-content-wrapper"> 
             <p class="footer-modal-text">
                 Підпишіться на розсилку
             </p>
@@ -456,9 +457,8 @@
                         <use href="./images/sprite.svg#modal-icon"></use>
                     </svg>
                 </button>
-                
- 
             </form>
+            </div>
     </div>
     </div>
 </footer>
@@ -521,13 +521,17 @@
             <use href="./images/sprite.svg#modal-icon-email"></use>
             </svg>
             </span>
-            <textarea
-            name="user_message" 
-            class="modal-form-message" 
-            placeholder="Введіть текст"></textarea>
+        </label>
+        <label class="modal-form-field">
+            <span class="modal-form-input-descr">Коментар</span>
+            <textarea name="user_message" class="modal-form-message" placeholder="Введіть текст"></textarea>
         </label>
         <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-chek visually-hidden"/>
-        <label for="user-policy" class="modal-chek-descr">Погоджуюся з розсилкою та приймаю&nbsp
+        <label for="user-policy" class="modal-chek-descr">  
+            <svg class="" width="12" height="12">
+            <use href="./images/sprite.svg#modal-icon"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp
            <a href="">Умови договору</a>
         </label>
         <button type="submit" class="modal-form-submit">Відправити</button>
