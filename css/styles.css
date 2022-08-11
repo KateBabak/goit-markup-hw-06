@@ -485,7 +485,7 @@ font-family: var(--logo-font);
  .footer-list>.container {
      display: flex;
      align-items: baseline;
-    justify-content: space-between;
+    
  }
 
   .footer-logo {
@@ -529,6 +529,7 @@ font-family: var(--logo-font);
 
         .footer-social {
             margin-left: 70px;
+            margin-right: auto;
         }
 
         .footer-social .social-list-link {
